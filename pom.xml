@@ -9,34 +9,73 @@
 	<description>Sample projects for playing with Vert.x</description>
 
 	<properties>
-		<junit.project.version>4.12</junit.project.version>
-		<vertx.project.version>3.4.2</vertx.project.version>
+		<junit.version>4.12</junit.version>
+		<vertx.version>3.4.2</vertx.version>
+		<slf4j.version>1.7.25</slf4j.version>
+		<log4j2.version>2.9.0</log4j2.version>
+		<disruptor.version>3.3.6</disruptor.version>
 	</properties>
-	
+
 	<modules>
 		<module>vxplayground-helloworld</module>
 	</modules>
 
 	<dependencies>
+
 		<!-- Default dependencies -->
+
 		<dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-core</artifactId>
-			<version>${vertx.project.version}</version>
+			<version>${vertx.version}</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.lmax</groupId>
+			<artifactId>disruptor</artifactId>
+			<version>${disruptor.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-slf4j-impl</artifactId>
+			<version>${log4j2.version}</version>
+		</dependency>
+
 		<!-- Test dependencies -->
+
 		<dependency>
 			<groupId>io.vertx</groupId>
 			<artifactId>vertx-unit</artifactId>
-			<version>${vertx.project.version}</version>
+			<version>${vertx.version}</version>
 			<scope>test</scope>
 		</dependency>
+
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>${junit.project.version}</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
+
 	</dependencies>
 
 	<build>
