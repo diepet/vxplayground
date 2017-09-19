@@ -9,7 +9,7 @@ import io.vertx.core.Vertx;
 import io.vertx.ext.unit.Async;
 import io.vertx.ext.unit.TestContext;
 import io.vertx.ext.unit.junit.VertxUnitRunner;
-import it.diepet.vxplayground.helloworld.MyFirstVerticle;
+import it.diepet.vxplayground.helloworld.verticle.MyFirstVerticle;
 
 @RunWith(VertxUnitRunner.class)
 public class MyFirstVerticleTests {

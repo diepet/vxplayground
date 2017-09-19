@@ -1,4 +1,4 @@
-package it.diepet.vxplayground.helloworld;
+package it.diepet.vxplayground.helloworld.verticle;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
