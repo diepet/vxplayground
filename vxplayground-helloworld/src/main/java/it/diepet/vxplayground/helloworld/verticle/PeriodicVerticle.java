@@ -5,7 +5,6 @@ import org.slf4j.LoggerFactory;
 
 import io.vertx.core.AbstractVerticle;
 import io.vertx.core.Future;
-import io.vertx.core.Handler;
 
 public class PeriodicVerticle extends AbstractVerticle {
 
